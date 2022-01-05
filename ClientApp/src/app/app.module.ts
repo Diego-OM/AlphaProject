@@ -9,6 +9,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { ProjectViewComponent } from './projectView/project-view/project-view.component';
+import { ProjectMainListComponent } from './projectMainList/project-main-list/project-main-list.component';
+import { ProjectDetailViewComponent } from './projectDetailView/project-detail-view/project-detail-view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    ProjectViewComponent,
+    ProjectMainListComponent,
+    ProjectDetailViewComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +32,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'project-main-list', component: ProjectMainListComponent },
+      { path: 'project-detail-view', component: ProjectDetailViewComponent },
+      { path: 'project-view', component: ProjectViewComponent },
     ])
   ],
   providers: [],
