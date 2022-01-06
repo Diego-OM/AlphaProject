@@ -14,3 +14,17 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.textoRegular{
+  font-family: 'Roboto Mono', monospace;
+  font-size: small;
+}
+
+.ViewProjectBtn:hover {
+background-color: lightgray;
+}
+
+.ViewProjectBtn{
+font-size: small;
+}
+
